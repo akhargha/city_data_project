@@ -39,7 +39,7 @@ class City {
    }
 
    public String toString(){
-      return name + state;
+      return name + "," + state + "," + longitude + "," + latitude + "," + population;
    }
 
 
