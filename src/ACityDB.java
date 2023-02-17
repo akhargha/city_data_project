@@ -1,3 +1,4 @@
+import java.lang.*;
 class ACityDB{
 
     private City[] cities;
@@ -8,8 +9,8 @@ class ACityDB{
         size = 0;
     }
 
-    public void insert (String name, String state, float longitude, float latitude, int population){
-        City city = new City (name,state,longitude,latitude,population);
+    public void insert (String name, String state, double latitude, double longitude, int population){
+        City city = new City (name,state,latitude,longitude,population);
         cities [size] = city;
         size++;
     }
@@ -29,10 +30,10 @@ class ACityDB{
         }
     }
 
-    public void delete(Float longitude, Float latitude){
+    public void delete(double latitude, double longitude){
         for (int i = 0; i < size; i++) {
-            if (Float.compare(cities[i].getLong(),longitude)==0) {
-                if (Float.compare(cities[i].getLat(),latitude)==0){
+            if (Double.compare(cities[i].getLong(),longitude)==0) {
+                if (Double.compare(cities[i].getLat(),latitude)==0) {
                     for (int j = i; j < size; j++){
                         if (j!=size-1){
                             cities[j]=cities[j+1];
@@ -55,10 +56,10 @@ class ACityDB{
         return null;
     }
 
-    public City search(Float longitude, Float latitude){
+    public City search(double latitude, double longitude){
         for (int i = 0; i < size; i++) {
-            if (Float.compare(cities[i].getLong(),longitude)==0) {
-                if (Float.compare(cities[i].getLat(),latitude)==0){
+            if (Double.compare(cities[i].getLong(),longitude)==0) {
+                if (Double.compare(cities[i].getLat(),latitude)==0){
                     return cities[i];
                 }
             }
@@ -66,8 +67,29 @@ class ACityDB{
         return null;
     }
 
-    public City test(){
-        return cities[1];
+    public void printAllState(String state){
+        for (int i = 0; i < size; i++){
+            if (cities[i].getSName().equals(state)){
+                System.out.println(cities[i].getCName());
+            }
+        }
     }
+
+    public void printAllDistance(double latitude, double longitude, double distance){
+        for (int i = 0; i < size; i++){
+            if (cities[i].distance(latitude,longitude,cities[i].getLat(),cities[i].getLong())<=distance){
+                System.out.println(cities[i]);
+            }
+        }
+    }
+
+    public void printAllPopulation(int from, int to){
+        for (int i = 0; i < size; i++){
+            if (cities[i].getPop()>=from && cities[i].getPop()<=to){
+                System.out.println(cities[i]);
+            }
+        }
+    }
+
 
 }

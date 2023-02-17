@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class ACityDBTest {
     public static void main (String[] args) {
-        ACityDB cityDB = new ACityDB(10); // create a DB
+        ACityDB cityDB = new ACityDB(30000); // create a DB
 
         Scanner sc = new Scanner (System.in);
         while(sc.hasNext()) {
@@ -17,20 +17,17 @@ public class ACityDBTest {
             String[] token = data.split(",");
             String city = token[0];
             String state = token[1];
-            Float lon = Float.valueOf(token[2]);
-            Float lat = Float.valueOf(token[3]);
+            double lat = Double.valueOf(token[2]);
+            double lon = Double.valueOf(token[3]);
             Integer pop = Integer.valueOf(token[4]);
-            cityDB.insert(city,state,lon,lat,pop);
+
+            cityDB.insert(city,state,lat,lon,pop);
 
         }
 
-        System.out.println(cityDB.test());
-        cityDB.insert("a","b",1.0f,2.0f,2);
-        System.out.println(cityDB.test());
-        System.out.println(cityDB.search("NYC","ABC"));
-        System.out.println(cityDB.search(1.5f,2f));
-        cityDB.delete(1.5f,2f);
-        System.out.println(cityDB.search("AC","SA"));
+        cityDB.printAllDistance(39.0,-76.0,5);
+        cityDB.printAllPopulation(10,50);
+
 
 
 
