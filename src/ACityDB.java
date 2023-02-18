@@ -77,7 +77,7 @@ class ACityDB{
 
     public void printAllDistance(double latitude, double longitude, double distance){
         for (int i = 0; i < size; i++){
-            if (cities[i].distance(latitude,longitude,cities[i].getLat(),cities[i].getLong())<=distance){
+            if (cities[i].distance(latitude, cities[i].getLat(), longitude, cities[i].getLong())<=distance){
                 System.out.println(cities[i]);
             }
         }

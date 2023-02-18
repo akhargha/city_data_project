@@ -25,8 +25,46 @@ public class ACityDBTest {
 
         }
 
-        cityDB.printAllDistance(39.0,-76.0,5);
-        cityDB.printAllPopulation(10,50);
+        long start = System.currentTimeMillis();
+
+        System.out.println(cityDB.search("Adams", "OR"));
+
+        long end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
+
+        start = System.currentTimeMillis();
+
+        System.out.println(cityDB.search(45.7662,-118.5643));
+
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
+
+        start = System.currentTimeMillis();
+
+        cityDB.delete("Adams","OR");
+
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
+
+        start = System.currentTimeMillis();
+
+        System.out.println(cityDB.search("Adams", "OR"));
+
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
+
+        cityDB.printAllState("RI");
+
+        System.out.println(" ");
+
+        cityDB.printAllDistance(39.0, -76.0, 0.5);
+
+        System.out.println(" ");
+
+        cityDB.printAllPopulation(5000000, 20000000);
+
+        System.out.println(" ");
+
 
 
 

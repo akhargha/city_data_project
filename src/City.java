@@ -38,19 +38,10 @@ class City {
       return population;
    }
 
-   public double distance(double latitude, double longitude, double lat, double lon){
-      longitude = Math.toRadians(longitude);
-      latitude = Math.toRadians(latitude);
-      lon = Math.toRadians(lon);
-      lat = Math.toRadians(lat);
-
-      double dlon = lon - longitude;
-      double dlat = lat - latitude;
-      double a = Math.pow(Math.sin(dlat/2),2) + Math.cos(latitude) * Math.cos(lat) * Math.pow(Math.sin(dlon/2),2);
-      double c = 2 * Math.asin(Math.sqrt(a));
-      return(c*6371*(1/1.609344));
+   public double distance(double latitude, double lat, double longitude, double lon){
+      Double eq = Math.sqrt(Math.pow(lat - latitude,2) + Math.pow(lon - longitude,2));
+      return eq;
    }
-
    public String toString(){
       return name + "," + state + "," + latitude + "," + longitude + "," + population;
    }
