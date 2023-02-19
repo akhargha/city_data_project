@@ -1,6 +1,8 @@
 /**
 *
 * City database record definition
+ * City object with basic accessible methods
+ * @Author: Anupam Khargharia
 *
 */
 class City {

@@ -1,3 +1,8 @@
+/**
+ * Link Class to create link nodes for Linked-list implementation
+ * @Author: Anupam Khargharia
+ */
+
 class Link<E>{
     private City element;
     private Link<E> next;
@@ -27,6 +32,11 @@ class Link<E>{
         return element = it;
     }
 }
+
+/**
+ * Main Database Class using Linked-list based implementation LCityDB with methods to insert, delete, and print using constraints.
+ * @Author: Anupam Khargharia
+ */
 
 class LCityDB<E>{
     private Link<E> head;

@@ -6,6 +6,7 @@ import java.util.Scanner;
  *
  * Run with:
  *    $ java LCityDBTest < input_file_name
+ * @Author: Anupam Khargharia
  */
 
 public class LCityDBTest {
@@ -28,13 +29,54 @@ public class LCityDBTest {
 
        }
 
-      System.out.println(cityDB.search("Abbs Valley","VA"));
-      System.out.println(cityDB.search(39.4629,-76.2754));
-      cityDB.delete(37.2395,-81.4616);
-      System.out.println(cityDB.search("Abbs Valley","VA"));
+      System.out.println("Search: ");
+      long start = System.currentTimeMillis();
+      System.out.println(cityDB.search("Adams", "OR"));
+      long end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Search: ");
+      start = System.currentTimeMillis();
+      System.out.println(cityDB.search(45.7662,-118.5643));
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Delete: ");
+      start = System.currentTimeMillis();
+      cityDB.delete("Adams","OR");
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Delete: ");
+      start = System.currentTimeMillis();
+      System.out.println(cityDB.search("Adams", "OR"));
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Print All State: ");
+      start = System.currentTimeMillis();
       cityDB.printAllState("RI");
-      System.out.println("  ");
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Print All Distance: ");
+      start = System.currentTimeMillis();
       cityDB.printAllDistance(39.0, -76.0, 0.5);
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
+      System.out.println("Print All Population: ");
+      start = System.currentTimeMillis();
       cityDB.printAllPopulation(5000000, 20000000);
+      end = System.currentTimeMillis();
+      System.out.println("Elapsed Time in milli seconds: " + (end-start));
+      System.out.println(" ");
+
    }
 }

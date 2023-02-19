@@ -5,6 +5,7 @@ import java.util.Scanner;
  *
  * Run with:
  *    $ java ACityDBTest < input_file_name
+ * @Author: Anupam Khargharia
  */
 
 public class ACityDBTest {
@@ -12,6 +13,7 @@ public class ACityDBTest {
         ACityDB cityDB = new ACityDB(30000); // create a DB
 
         Scanner sc = new Scanner (System.in);
+
         while(sc.hasNext()) {
             String data = sc.nextLine();
             String[] token = data.split(",");
@@ -25,54 +27,53 @@ public class ACityDBTest {
 
         }
 
+        System.out.println("Search: ");
         long start = System.currentTimeMillis();
-
         System.out.println(cityDB.search("Adams", "OR"));
-
         long end = System.currentTimeMillis();
         System.out.println("Elapsed Time in milli seconds: " + (end-start));
+        System.out.println(" ");
 
+        System.out.println("Search: ");
         start = System.currentTimeMillis();
-
         System.out.println(cityDB.search(45.7662,-118.5643));
-
         end = System.currentTimeMillis();
         System.out.println("Elapsed Time in milli seconds: " + (end-start));
+        System.out.println(" ");
 
+        System.out.println("Delete: ");
         start = System.currentTimeMillis();
-
         cityDB.delete("Adams","OR");
-
         end = System.currentTimeMillis();
         System.out.println("Elapsed Time in milli seconds: " + (end-start));
+        System.out.println(" ");
 
+        System.out.println("Delete: ");
         start = System.currentTimeMillis();
-
         System.out.println(cityDB.search("Adams", "OR"));
-
         end = System.currentTimeMillis();
         System.out.println("Elapsed Time in milli seconds: " + (end-start));
+        System.out.println(" ");
 
+        System.out.println("Print All State: ");
+        start = System.currentTimeMillis();
         cityDB.printAllState("RI");
-
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
         System.out.println(" ");
 
+        System.out.println("Print All Distance: ");
+        start = System.currentTimeMillis();
         cityDB.printAllDistance(39.0, -76.0, 0.5);
-
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
         System.out.println(" ");
 
+        System.out.println("Print All Population: ");
+        start = System.currentTimeMillis();
         cityDB.printAllPopulation(5000000, 20000000);
-
+        end = System.currentTimeMillis();
+        System.out.println("Elapsed Time in milli seconds: " + (end-start));
         System.out.println(" ");
-
-
-
-
-
-        // For each line of the input file
-        //   get city name, state, coordinates, and population
-        //   using these data, insert a new record into DB
-
-        // Do other operations on DB
     }
 }

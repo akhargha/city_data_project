@@ -1,3 +1,8 @@
+/**
+ * Main Database Class using Array based implementation ACityDB with methods to insert, delete, and print using constraints.
+ * @Author: Anupam Khargharia
+ */
+
 import java.lang.*;
 class ACityDB{
 
