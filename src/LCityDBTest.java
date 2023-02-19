@@ -30,6 +30,11 @@ public class LCityDBTest {
 
       System.out.println(cityDB.search("Abbs Valley","VA"));
       System.out.println(cityDB.search(39.4629,-76.2754));
-
+      cityDB.delete(37.2395,-81.4616);
+      System.out.println(cityDB.search("Abbs Valley","VA"));
+      cityDB.printAllState("RI");
+      System.out.println("  ");
+      cityDB.printAllDistance(39.0, -76.0, 0.5);
+      cityDB.printAllPopulation(5000000, 20000000);
    }
 }
