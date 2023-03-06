@@ -1,0 +1,303 @@
+@author: Anupam Khargharia
+
+Last login: Sun Feb 19 15:02:52 on ttys000
+anupam@Anupams-MacBook-Air ~ % cd Desktop/Computer\ Science/city_data_project/src
+anupam@Anupams-MacBook-Air src % javac ACityDBTest.java 
+anupam@Anupams-MacBook-Air src % java ACityDBTest < uscities.in.txt 
+Search: 
+Adams,OR,45.7662,-118.5643,484
+Elapsed Time in milli seconds: 74
+ 
+Search: 
+Adams,OR,45.7662,-118.5643,484
+Elapsed Time in milli seconds: 0
+ 
+Delete: 
+Elapsed Time in milli seconds: 24
+ 
+Delete: 
+null
+Elapsed Time in milli seconds: 4
+ 
+Print All State: 
+Ashaway
+Bradford
+Carolina
+Central Falls
+Chepachet
+Clayville
+Cranston
+Cumberland Hill
+East Providence
+Foster Center
+Greene
+Greenville
+Harmony
+Harrisville
+Hope Valley
+Kingston
+Melville
+Misquamicut
+Narragansett Pier
+Newport East
+Newport
+Pascoag
+Pawtucket
+Providence
+Quonochontaug
+Valley Falls
+Warwick
+Watch Hill
+Weekapaug
+Woonsocket
+Wyoming
+Elapsed Time in milli seconds: 5
+ 
+Print All Distance: 
+Aberdeen Proving Ground,MD,39.4672,-76.1308,2862
+Algonquin,MD,38.5843,-76.0965,1010
+Arnold,MD,39.0437,-76.4974,25056
+Barclay,MD,39.1451,-75.8655,181
+Betterton,MD,39.3652,-76.069,410
+Bridgeville,DE,38.7251,-75.6029,2499
+Brookview,MD,38.5739,-75.7927,49
+Butlertown,MD,39.2817,-76.0995,505
+Cambridge,MD,38.5515,-76.0787,13026
+Camden,DE,39.099,-75.5571,3786
+Cape St. Claire,MD,39.0433,-76.4471,8762
+Cecilton,MD,39.4047,-75.8675,808
+Centreville,MD,39.042,-76.063,4640
+Chesapeake Landing,MD,39.2697,-76.1584,160
+Chester,MD,38.9677,-76.2824,4371
+Chestertown,MD,39.2182,-76.0714,5557
+Cheswold,DE,39.2189,-75.5882,1705
+Choptank,MD,38.6822,-75.9494,99
+Church Hill,MD,39.1452,-75.9808,1123
+Clayton,DE,39.2849,-75.6366,3845
+Cordova,MD,38.868,-75.9989,318
+Crumpton,MD,39.2358,-75.9223,402
+Denton,MD,38.877,-75.8264,4712
+East New Market,MD,38.597,-75.9232,392
+Easton,MD,38.776,-76.0701,16912
+Edesville,MD,39.1542,-76.2079,108
+Eldorado,MD,38.5841,-75.7893,71
+Fairlee,MD,39.2268,-76.1654,478
+Farmington,DE,38.8699,-75.579,209
+Federalsburg,MD,38.6929,-75.7727,2824
+Felton,DE,39.0127,-75.5765,1144
+Galena,MD,39.3425,-75.8787,716
+Georgetown,MD,39.2194,-76.1971,42
+Goldsboro,MD,39.0316,-75.7821,215
+Grasonville,MD,38.9559,-76.1947,3388
+Greensboro,MD,38.9764,-75.808,2590
+Greenwood,DE,38.8072,-75.59,1459
+Harrington,DE,38.9243,-75.5707,3730
+Hartly,DE,39.1683,-75.7124,163
+Henderson,MD,39.075,-75.766,178
+Highland Acres,DE,39.1163,-75.5216,3910
+Highland Beach,MD,38.9312,-76.466,70
+Hillsboro,MD,38.917,-75.9416,122
+Hurlock,MD,38.6268,-75.864,2239
+Kennedyville,MD,39.3032,-75.9949,311
+Kent Narrows,MD,38.9703,-76.2384,509
+Kenton,DE,39.2274,-75.6646,438
+Kingstown,MD,39.2036,-76.0465,1745
+Lake Shore,MD,39.103,-76.4876,19388
+Marydel,MD,39.113,-75.7497,191
+Millington,MD,39.2629,-75.836,680
+Naval Academy,MD,38.9858,-76.488,4729
+Oxford,MD,38.685,-76.1702,862
+Preston,MD,38.7112,-75.9087,951
+Queenstown,MD,38.9868,-76.1633,777
+Ridgely,MD,38.9528,-75.8828,1868
+Riverview,DE,39.0293,-75.5202,2091
+Rock Hall,MD,39.139,-76.243,1397
+Rodney Village,DE,39.1283,-75.5396,1472
+Romancoke,MD,38.8872,-76.3476,1667
+Secretary,MD,38.6081,-75.947,648
+Smyrna,DE,39.2935,-75.6083,12619
+Stevensville,MD,38.9745,-76.3184,8359
+Still Pond,MD,39.326,-76.0424,110
+St. Michaels,MD,38.7883,-76.2244,1483
+Sudlersville,MD,39.1833,-75.8535,420
+Templeville,MD,39.1361,-75.7676,154
+Tilghman Island,MD,38.7008,-76.3353,837
+Tolchester,MD,39.2219,-76.2349,487
+Trappe,MD,38.6634,-76.0518,1098
+Viola,DE,39.0429,-75.5715,116
+West Denton,MD,38.8896,-75.8389,75
+Williston,MD,38.8307,-75.851,137
+Woodside,DE,39.0711,-75.5677,200
+Woodside East,DE,39.0676,-75.5376,1867
+Worton,MD,39.2718,-76.0933,108
+Wyoming,DE,39.1147,-75.563,1636
+Elapsed Time in milli seconds: 16
+ 
+Print All Population: 
+Atlanta,GA,33.7628,-84.422,5046555
+Chicago,IL,41.8375,-87.6866,8595181
+Dallas,TX,32.7935,-96.7667,5668165
+Houston,TX,29.786,-95.3885,5650910
+Los Angeles,CA,34.1141,-118.4068,12121244
+Miami,FL,25.784,-80.2101,5711945
+New York,NY,40.6943,-73.9249,18972871
+Philadelphia,PA,40.0077,-75.1339,5512873
+Elapsed Time in milli seconds: 6
+ 
+anupam@Anupams-MacBook-Air src % 
+anupam@Anupams-MacBook-Air src % 
+anupam@Anupams-MacBook-Air src % 
+anupam@Anupams-MacBook-Air src % 
+anupam@Anupams-MacBook-Air src % javac LCityDBTest.java 
+anupam@Anupams-MacBook-Air src % java LCityDBTest < uscities.in.txt 
+Search: 
+Adams,OR,45.7662,-118.5643,484
+Elapsed Time in milli seconds: 72
+ 
+Search: 
+Adams,OR,45.7662,-118.5643,484
+Elapsed Time in milli seconds: 0
+ 
+Delete: 
+Elapsed Time in milli seconds: 14
+ 
+Delete: 
+null
+Elapsed Time in milli seconds: 4
+ 
+Print All State: 
+Ashaway,RI,41.426,-71.7852,1539
+Bradford,RI,41.3944,-71.7541,1315
+Carolina,RI,41.4625,-71.6585,982
+Central Falls,RI,41.8901,-71.3934,22192
+Chepachet,RI,41.9104,-71.6654,1691
+Clayville,RI,41.7734,-71.6854,109
+Cranston,RI,41.7658,-71.4858,82654
+Cumberland Hill,RI,41.9736,-71.4605,8925
+East Providence,RI,41.8065,-71.3565,47171
+Foster Center,RI,41.7898,-71.7328,276
+Greene,RI,41.6988,-71.7339,1032
+Greenville,RI,41.882,-71.5549,8955
+Harmony,RI,41.8964,-71.6052,1493
+Harrisville,RI,41.9687,-71.6768,1459
+Hope Valley,RI,41.5151,-71.7201,1717
+Kingston,RI,41.4738,-71.5236,6496
+Melville,RI,41.5611,-71.2937,1838
+Misquamicut,RI,41.3237,-71.822,406
+Narragansett Pier,RI,41.4281,-71.4668,3265
+Newport East,RI,41.5159,-71.2878,11903
+Newport,RI,41.4801,-71.3203,25322
+Pascoag,RI,41.952,-71.7042,4471
+Pawtucket,RI,41.8744,-71.3743,75200
+Providence,RI,41.823,-71.4187,1270149
+Quonochontaug,RI,41.3447,-71.7059,331
+Valley Falls,RI,41.9233,-71.3924,12064
+Warwick,RI,41.7062,-71.4334,82666
+Watch Hill,RI,41.3157,-71.8486,274
+Weekapaug,RI,41.3359,-71.7633,479
+Woonsocket,RI,42.001,-71.4993,43044
+Wyoming,RI,41.5143,-71.6903,182
+Elapsed Time in milli seconds: 10
+ 
+Print All Distance: 
+Aberdeen Proving Ground,MD,39.4672,-76.1308,2862
+Algonquin,MD,38.5843,-76.0965,1010
+Arnold,MD,39.0437,-76.4974,25056
+Barclay,MD,39.1451,-75.8655,181
+Betterton,MD,39.3652,-76.069,410
+Bridgeville,DE,38.7251,-75.6029,2499
+Brookview,MD,38.5739,-75.7927,49
+Butlertown,MD,39.2817,-76.0995,505
+Cambridge,MD,38.5515,-76.0787,13026
+Camden,DE,39.099,-75.5571,3786
+Cape St. Claire,MD,39.0433,-76.4471,8762
+Cecilton,MD,39.4047,-75.8675,808
+Centreville,MD,39.042,-76.063,4640
+Chesapeake Landing,MD,39.2697,-76.1584,160
+Chester,MD,38.9677,-76.2824,4371
+Chestertown,MD,39.2182,-76.0714,5557
+Cheswold,DE,39.2189,-75.5882,1705
+Choptank,MD,38.6822,-75.9494,99
+Church Hill,MD,39.1452,-75.9808,1123
+Clayton,DE,39.2849,-75.6366,3845
+Cordova,MD,38.868,-75.9989,318
+Crumpton,MD,39.2358,-75.9223,402
+Denton,MD,38.877,-75.8264,4712
+East New Market,MD,38.597,-75.9232,392
+Easton,MD,38.776,-76.0701,16912
+Edesville,MD,39.1542,-76.2079,108
+Eldorado,MD,38.5841,-75.7893,71
+Fairlee,MD,39.2268,-76.1654,478
+Farmington,DE,38.8699,-75.579,209
+Federalsburg,MD,38.6929,-75.7727,2824
+Felton,DE,39.0127,-75.5765,1144
+Galena,MD,39.3425,-75.8787,716
+Georgetown,MD,39.2194,-76.1971,42
+Goldsboro,MD,39.0316,-75.7821,215
+Grasonville,MD,38.9559,-76.1947,3388
+Greensboro,MD,38.9764,-75.808,2590
+Greenwood,DE,38.8072,-75.59,1459
+Harrington,DE,38.9243,-75.5707,3730
+Hartly,DE,39.1683,-75.7124,163
+Henderson,MD,39.075,-75.766,178
+Highland Acres,DE,39.1163,-75.5216,3910
+Highland Beach,MD,38.9312,-76.466,70
+Hillsboro,MD,38.917,-75.9416,122
+Hurlock,MD,38.6268,-75.864,2239
+Kennedyville,MD,39.3032,-75.9949,311
+Kent Narrows,MD,38.9703,-76.2384,509
+Kenton,DE,39.2274,-75.6646,438
+Kingstown,MD,39.2036,-76.0465,1745
+Lake Shore,MD,39.103,-76.4876,19388
+Marydel,MD,39.113,-75.7497,191
+Millington,MD,39.2629,-75.836,680
+Naval Academy,MD,38.9858,-76.488,4729
+Oxford,MD,38.685,-76.1702,862
+Preston,MD,38.7112,-75.9087,951
+Queenstown,MD,38.9868,-76.1633,777
+Ridgely,MD,38.9528,-75.8828,1868
+Riverview,DE,39.0293,-75.5202,2091
+Rock Hall,MD,39.139,-76.243,1397
+Rodney Village,DE,39.1283,-75.5396,1472
+Romancoke,MD,38.8872,-76.3476,1667
+Secretary,MD,38.6081,-75.947,648
+Smyrna,DE,39.2935,-75.6083,12619
+Stevensville,MD,38.9745,-76.3184,8359
+Still Pond,MD,39.326,-76.0424,110
+St. Michaels,MD,38.7883,-76.2244,1483
+Sudlersville,MD,39.1833,-75.8535,420
+Templeville,MD,39.1361,-75.7676,154
+Tilghman Island,MD,38.7008,-76.3353,837
+Tolchester,MD,39.2219,-76.2349,487
+Trappe,MD,38.6634,-76.0518,1098
+Viola,DE,39.0429,-75.5715,116
+West Denton,MD,38.8896,-75.8389,75
+Williston,MD,38.8307,-75.851,137
+Woodside,DE,39.0711,-75.5677,200
+Woodside East,DE,39.0676,-75.5376,1867
+Worton,MD,39.2718,-76.0933,108
+Wyoming,DE,39.1147,-75.563,1636
+Elapsed Time in milli seconds: 17
+ 
+Print All Population: 
+Atlanta,GA,33.7628,-84.422,5046555
+Chicago,IL,41.8375,-87.6866,8595181
+Dallas,TX,32.7935,-96.7667,5668165
+Houston,TX,29.786,-95.3885,5650910
+Los Angeles,CA,34.1141,-118.4068,12121244
+Miami,FL,25.784,-80.2101,5711945
+New York,NY,40.6943,-73.9249,18972871
+Philadelphia,PA,40.0077,-75.1339,5512873
+Elapsed Time in milli seconds: 7
+ 
+anupam@Anupams-MacBook-Air src % 
+-------------
+
+Q. What are your conclusions about the relative advantages and disadvantages of the two implementations?
+
+Ans- Looking at the running time statistics, it seems like Linked-list based implementation is much more faster for deleting nodes (i.e. cities). It took 14 milliseconds to delete a City node from LCityDB compared to 24 seconds in ACityDB. Since inserting and deleting are similar looking operations for arrays and linked-lists, linked-list implementation should have faster execution for insertion too. This is not the case for this specific implementation as 'insert' method for ACityDB here is similar to 'append' method i.e we are just adding the inserted City object to the end of the array. 
+
+Q. Would storing records on the list in alphabetical order by city name speed any of the operations?
+Q. Would keeping the list in alphabetical order slow any of the operations?
+
+Ans- Storing records on the list in alphabetical order will open opportunities to improve the code. For example, if records are sorted alphabetically, we can use binary search for arrays (use the middle point of arrays and keep recursing until we find the City). This will improve the speed of 'search' for array based implementation. On the downside, this would slow down the insert operation as we would have to go through the array O(n) just to sort the list into alphabetical order. 
